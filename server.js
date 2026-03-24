@@ -123,7 +123,7 @@ app.use(express.json());
 app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
-  res.send('Borderless Crafts backend is running.'));
+  res.send('Borderless Crafts backend is running.');
 });
 
 app.get('/products', (req, res) => {
