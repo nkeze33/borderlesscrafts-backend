@@ -8,7 +8,8 @@ const cors = require('cors');
 const app = express();
 app.use(cors({
   origin: [
-    'https://stellar-haupia-f5cd28.netlify.app',
+    'https://borderlesscrafts.com',
+    'https://www.borderlesscrafts.com',
     'http://localhost:3000'
   ]
 }));
