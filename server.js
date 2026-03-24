@@ -241,8 +241,8 @@ app.post('/create-checkout-session', async (req, res) => {
     const session = await stripe.checkout.sessions.create({
       mode: 'payment',
       line_items,
-      success_url: 'https://stellar-haupia-f5cd28.netlify.app/success.html?session_id={CHECKOUT_SESSION_ID}',
-      cancel_url: 'https://stellar-haupia-f5cd28.netlify.app/cancel.html',
+      success_url: 'https://borderlesscrafts.com/success.html?session_id={CHECKOUT_SESSION_ID}',
+      cancel_url: 'https://borderlesscrafts.com/cancel.html',
 
       shipping_address_collection: {
         allowed_countries: ['GB', 'US', 'CA', 'AU', 'DE', 'FR', 'IE', 'NL'],
