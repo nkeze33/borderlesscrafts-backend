@@ -3,8 +3,17 @@ require('dotenv').config();
 const express = require('express');
 const Stripe = require('stripe');
 const path = require('path');
+const cors = require('cors');
 
 const app = express();
+app.use(cors({
+  origin: [
+    'https://stellar-haupia-f5cd28.netlify.app',
+    'http://localhost:3000'
+  ]
+}));
+
+
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 
 const PRODUCTS = {
@@ -114,7 +123,7 @@ app.use(express.json());
 app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'Borderless Crafts backend is running.'));
 });
 
 app.get('/products', (req, res) => {
@@ -231,8 +240,8 @@ app.post('/create-checkout-session', async (req, res) => {
     const session = await stripe.checkout.sessions.create({
       mode: 'payment',
       line_items,
-      success_url: 'https://borderlesscrafts-123.netlify.app/success.html?session_id={CHECKOUT_SESSION_ID}',
-      cancel_url: 'https://borderlesscrafts-123.netlify.app/cancel.html',
+      success_url: 'https://stellar-haupia-f5cd28.netlify.app/success.html?session_id={CHECKOUT_SESSION_ID}',
+      cancel_url: 'https://stellar-haupia-f5cd28.netlify.app/cancel.html',
 
       shipping_address_collection: {
         allowed_countries: ['GB', 'US', 'CA', 'AU', 'DE', 'FR', 'IE', 'NL'],
