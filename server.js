@@ -49,9 +49,9 @@ const PRODUCTS = {
   },
   'Black-Clip-Minerva': {
     name: 'The III Clip Wallet',
-    price: 11000,
+    price: 11000
+  }
 };
-
 /*
   Shipping settings
 */
