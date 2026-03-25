@@ -36,17 +36,20 @@ const PRODUCTS = {
     price: 8000,
   },
   'slim-bifold-card-holder': {
-    name: 'The III Slim Bifold Card Holder',
+    name: 'The III Slim Card Holder',
     price: 4000,
   },
   'id-card-holder': {
-    name: 'The III Card Holder — ID Edition',
+    name: 'The III ID Card Holder',
     price: 3000,
   },
   'black-denim-suede-bag': {
     name: 'Black Denim & Suede Bag',
     price: 5499,
   },
+  'Black-Clip-Minerva': {
+    name: 'The III Clip Wallet',
+    price: 11000,
 };
 
 /*
