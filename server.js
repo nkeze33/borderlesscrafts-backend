@@ -47,7 +47,7 @@ const PRODUCTS = {
     name: 'Black Denim & Suede Bag',
     price: 5499,
   },
-  'Black-Clip-Minerva': {
+  'black-clip-minerva': {
     name: 'The III Clip Wallet',
     price: 11000
   }
