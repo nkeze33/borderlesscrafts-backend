@@ -49,11 +49,11 @@ const PRODUCTS = {
   },
   'black-clip-minerva': {
     name: 'The III Clip Wallet',
-    price: 11000
+    price: 11000,
   },
   'vertical-kinya-lock': {
     name: 'The III Vertical Card Holder',
-    price: 40.00
+    price: 4000
   }
 };
 /*
